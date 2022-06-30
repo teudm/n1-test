@@ -1,0 +1,28 @@
+{
+  "name": "n1-test",
+  "version": "1.0.0",
+  "description": "Leia atentamente até o final.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teudm/n1-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teudm/n1-test/issues"
+  },
+  "homepage": "https://github.com/teudm/n1-test#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "sass": "^1.53.0"
+  }
+}
