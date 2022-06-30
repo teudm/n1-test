@@ -11,9 +11,9 @@ const sass = () => {
   .pipe(dest('./css/'));
 };
 
-const watch = () => {
+const run = () => {
   watch('./*.scss', sass)
 }
 
 exports.sass = sass;
-exports.watch = watch;
+exports.run = run;
