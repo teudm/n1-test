@@ -22,16 +22,61 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css
     "
     />
+    <link rel="icon" type="image/x-icon" href="assets/img/n1-icon.ico" />
     <title>Teste N1</title>
   </head>
   <body>
-    <header>
+    <div class="menu-mobile">
+      <ul class="list">
+        <li class="list-title">Luta</li>
+        <li class="list-item">Mortal Kombat</li>
+        <li class="list-item">Smash Bros</li>
+        <li class="list-item">Killer Instinct</li>
+        <li class="list-item">DBZ Kakarot</li>
+      </ul>
+      <ul class="list">
+        <li class="list-title">Ação / Aventura</li>
+        <li class="list-item">GTA V</li>
+        <li class="list-item">Tomb Raider</li>
+        <li class="list-item">HALO</li>
+        <li class="list-item">Call of Duty</li>
+      </ul>
+      <ul class="list">
+        <li class="list-title">Corrida</li>
+        <li class="list-item">NEED For SPEED</li>
+        <li class="list-item">Forza Horizon</li>
+      </ul>
+    </div>
+    <header id="header">
       <div class="left">
-        <div class="hamburguer-menu">
+        <div class="hamburguer-menu" onclick="main.openMenu()">
           <img src="./assets/svgs/icon_hamburguer.svg" alt="Abrir menu" />
+          <div class="menu-desktop hide">
+            <ul class="list">
+              <li class="list-title">Luta</li>
+              <li class="list-item">Mortal Kombat</li>
+              <li class="list-item">Smash Bros</li>
+              <li class="list-item">Killer Instinct</li>
+              <li class="list-item">DBZ Kakarot</li>
+            </ul>
+            <ul class="list">
+              <li class="list-title">Ação / Aventura</li>
+              <li class="list-item">GTA V</li>
+              <li class="list-item">Tomb Raider</li>
+              <li class="list-item">HALO</li>
+              <li class="list-item">Call of Duty</li>
+            </ul>
+            <ul class="list">
+              <li class="list-title">Corrida</li>
+              <li class="list-item">NEED For SPEED</li>
+              <li class="list-item">Forza Horizon</li>
+            </ul>
+          </div>
         </div>
         <div class="logo">
-          <img src="./assets/img/logo.png" alt="logo" />
+          <a href="/">
+            <img src="./assets/img/logo.png" alt="logo" />
+          </a>
         </div>
       </div>
       <div class="right">
@@ -48,13 +93,235 @@
             src="./assets/svgs/shopping-bag-solid.svg"
             alt="Icone de sacola"
           />
+          <span id="cart-qtd" class="hide"></span>
         </div>
       </div>
     </header>
     <section class="main-slider">
-      <div class="slide _1">1</div>
-      <div class="slide _2">2</div>
+      <div class="slide _1">
+        <div class="content">
+          <div class="title-wrapper">
+            <h3>Mortal Kombat</h3>
+          </div>
+          <div class="price">
+            <p>R$ 299</p>
+            <p class="centavos">,99</p>
+          </div>
+          <div class="description">
+            <p>
+              Mortal Kombat X combina uma apresentação cinemática única com uma
+              jogabilidade totalmente nova. Os jogadores podem escolher pela
+              primeira vez diversas variantes de cada personagem, afetando tanto
+              a estratégia como o estilo de luta.
+            </p>
+          </div>
+        </div>
+        <div class="navegação">
+          <div class="name">
+            <p>Mortal Kombat</p>
+            <div class="line"></div>
+          </div>
+          <div class="nav-menu">
+            <p>1 / 2</p>
+            <div class="nav-buttons">
+              <img
+                src="./assets/svgs/angle-left-solid.svg"
+                class="left-angle"
+                alt="Seta para esquerda"
+              />
+              <img
+                src="./assets/svgs/angle-right-solid.svg"
+                class="right-angle"
+                alt="Seta para direita"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide _2">
+        <div class="content">
+          <div class="title-wrapper">
+            <h3>Red Dead Redemption 2</h3>
+          </div>
+          <div class="price">
+            <p>R$ 299</p>
+            <p class="centavos">,99</p>
+          </div>
+          <div class="description">
+            <p>
+              Em 1899, Red Dead Redemption 2 segue a história de Arthur Morgan,
+              um membro da guangue de bandidos de Dutch Van der Linde. Depois de
+              tudo dar errado durante um roubo em uma cidade do oeste chamada
+              Blackwater, Arthur Morgan e a gangue Van der Linde são forçados a
+              fugir.
+            </p>
+          </div>
+        </div>
+        <div class="navegação">
+          <div class="name">
+            <p>Red Dead Redemption 2</p>
+            <div class="line"></div>
+          </div>
+          <div class="nav-menu">
+            <p>2 / 2</p>
+            <div class="nav-buttons">
+              <img
+                src="./assets/svgs/angle-left-solid.svg"
+                class="left-angle"
+                alt="Seta para esquerda"
+              />
+              <img
+                src="./assets/svgs/angle-right-solid.svg"
+                class="right-angle"
+                alt="Seta para direita"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="games">
+      <div class="game">
+        <img
+          src="./assets/img/zelda_banner.jpg"
+          alt="zelda banner"
+          class="game-img"
+        />
+        <p class="subtitle">The Legend of Zelda - Breath of the wild</p>
+      </div>
+      <div class="game">
+        <img
+          src="./assets/img/sekiro_banner.jpg"
+          alt="sekiro banner"
+          class="game-img"
+        />
+        <p class="subtitle">SEKIRO - Shadows of die twice</p>
+      </div>
+    </section>
+    <section class="destaques">
+      <div class="title">
+        <img src="./assets/svgs/destaques.svg" alt="produtos em destaque" />
+        <h3>Produtos em destaque</h3>
+      </div>
+      <div class="product">
+        <div class="product-card">
+          <div class="product-card-img">
+            <img
+              src="./assets/img/product-outriders.png"
+              alt="Outriders"
+              class="product-img"
+            />
+          </div>
+          <div class="product-card-description">
+            <div class="product-card-description-name">Outriders</div>
+            <div class="product-card-description-price">R$ 200,00</div>
+            <div class="button-buy">
+              <a href="" id="product-1" class="buy" onclick="main.buy(1)"
+                >Comprar</a
+              >
+              <a
+                href=""
+                id="product-1-comprado"
+                class="comprado hide"
+                onclick="main.comprado()"
+              >
+                <p>Comprado!</p>
+                <img src="assets/img/mario.png" alt="super mario" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img
+              src="assets/img/product-cyberpunk2077.png"
+              alt="cyberpunk"
+              class="product-img"
+            />
+          </div>
+          <div class="product-card-description">
+            <div class="product-card-description-name">CYBERPUNK 2077</div>
+            <div class="product-card-description-price">R$ 200,00</div>
+            <div class="button-buy">
+              <a href="" id="product-2" class="buy" onclick="main.buy(2)"
+                >Comprar</a
+              >
+              <a
+                href=""
+                id="product-2-comprado"
+                class="comprado hide"
+                onclick="main.comprado()"
+              >
+                <p>Comprado!</p>
+                <img src="assets/img/mario.png" alt="super mario" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img
+              src="assets/img/product-donkey-kong-country-tropical-freeze.png"
+              alt="donkey kong"
+              class="product-img"
+            />
+          </div>
+          <div class="product-card-description">
+            <div class="product-card-description-name">
+              Donkey Kong Country Tropical Freeze
+            </div>
+            <div class="product-card-description-price">R$ 200,00</div>
+            <div class="button-buy">
+              <a href="" id="product-3" class="buy" onclick="main.buy(3)"
+                >Comprar</a
+              >
+              <a
+                href=""
+                id="product-3-comprado"
+                class="comprado hide"
+                onclick="main.comprado()"
+              >
+                <p>Comprado!</p>
+                <img src="assets/img/mario.png" alt="super mario" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal hide" id="modal-compra">
+      <div class="modal-content">
+        <div class="close" onclick="main.openCloseModal('modal-compra')">
+          <img src="assets/svgs/close_btn.svg" alt="fechar" />
+        </div>
+        <div class="modal-content-title">
+          <h3>Pedido realizado com sucesso!</h3>
+        </div>
+        <img src="assets/img/mario-modal.png" alt="Super mário" class="mario" />
+      </div>
+    </div>
+
+    <div class="modal hide" id="modal-comprado">
+      <div class="modal-content">
+        <div class="close" onclick="main.openCloseModal('modal-comprado')">
+          <img src="assets/svgs/close_btn.svg" alt="fechar" />
+        </div>
+        <div class="modal-content-title">
+          <h3>Este produto já foi comprado!</h3>
+        </div>
+        <img src="assets/img/mario-modal.png" alt="Super mário" class="mario" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="ag-n1-logo">
+        <img src="assets/img/logo-n1.png" alt="Logo N1" />
+      </div>
+      <div class="copyright">
+        <p>Agência N1 - Todos os direitos reservados</p>
+      </div>
+    </footer>
 
     <script
       type="text/javascript"
